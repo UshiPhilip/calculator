@@ -1,31 +1,35 @@
 from operations import add, subtract, multiply, divide
-from advanced import power, square_root, modulo
+from advanced import power, square_root
+from ui import get_number, show_menu
 
 print("============================")
-print(" Welcome to our calculator!")
+print(" Welcome To Our Calculator!")
 print("============================")
 
-print("\nBasic actions:")
+while True:
+    choice = show_menu()
 
-result = add(3,5)
-print(f"3 + 5 = {result}")
+    if choice == "0":
+        print("Good bye")
+        break
 
-result = subtract(5,3)
-print(f"5 - 3 = {result}")
+    if choice in ["1", "2", "3", "4", "5"]:
+        num1 = get_number("Enter your first number: ")
+        num2 = get_number("Enter your second number: ")\
 
-result = multiply(3,5)
-print(f"3 * 5 = {result}")
+        if choice == "1":
+            print(f"Result: {add(num1, num2)}.")
+        elif choice == "2":
+            print(f"Result: {subtract(num1, num2)}.")
+        elif choice == "3":
+            print(f"Result: {multiply(num1, num2)}.")
+        elif choice == "4":
+            print(f"Result: {divide(num1, num2)}.")
+        elif choice == "5":
+            print(f"Result: {power(num1, num2)}.")
+    elif choice == "6":
+        num = get_number("Enter a number: ")
+        print(f"Result: {square_root(num)}.")
 
-result = divide(5,3)
-print(f"5 / 3 = {result}")
-
-print("\nAdvance actions:")
-
-result = power(2,3)
-print(f"2 ** 3 = {result}")
-
-result = square_root(4)
-print(f"4 ** 0.5 = {result}")
-
-result = modulo(5,2)
-print(f"5 % 2 = {result}")
+    else:
+        print("Invalid selection...")
