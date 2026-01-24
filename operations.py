@@ -1,3 +1,9 @@
+"""
+Operator model:
+===============
+Including basic calculations: Addition, Subtract, Multiply, Dividing
+"""
+
 def add(a, b):
     """Adding two numbers"""
     return a + b

@@ -1,3 +1,10 @@
+"""
+Advanced model:
+================
+Including advanced calculations: Power By, Square Root, Modulo
+"""
+
+
 def power(base, exponent):
     """
     Power by

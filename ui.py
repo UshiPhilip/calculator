@@ -1,3 +1,9 @@
+"""
+Ui model:
+=========
+Including functions to the user interface
+"""
+
 def get_number(prompt):
     """
     Catches a number from the user
