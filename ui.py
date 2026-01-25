@@ -30,5 +30,8 @@ def show_menu():
     print("9. Find maximum")
     print("10. Find minimum")
     print("11. Median")
+    print("=== History ===")
+    print("12. Show history")
+    print("13. Clear history")
     print("0. Exit")
     return input("Chose an action: ")
