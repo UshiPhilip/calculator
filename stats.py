@@ -28,3 +28,12 @@ def find_min(numbers):
     if not numbers:
         return None
     return min(numbers)
+
+def median(numbers):
+    """
+    Find the median of the numbers.
+    """
+    if not numbers:
+        return 0
+    numbers.sort()
+    return numbers[len(numbers) // 2]

@@ -1,5 +1,7 @@
+from Learning_Python.Functions.part_0.q3 import return_to_base
 from operations import add, subtract, multiply, divide
 from advanced import power, square_root, factorial
+from stats import average, find_max, find_min, median
 from ui import get_number, show_menu
 
 print("============================")
@@ -34,6 +36,22 @@ while True:
     elif choice == "7":
         num = get_number("Enter a number: ")
         print(f"Result: {factorial(num)}")
+
+    elif choice == "8":
+        num = get_number("Enter a number list: ")
+        print(f"Result: {average(num)}")
+
+    elif choice == "9":
+        num = get_number("Enter a numbers list: ")
+        print(f"Result: {find_max(num)}")
+
+    elif choice == "10":
+        num = get_number("Enter a number list: ")
+        print(f"Result: {find_min(num)}")
+
+    elif choice == "11":
+        num = get_number("Enter a number list: ")
+        print(f"result: {median(num)}")
 
     else:
         print("Invalid selection...")

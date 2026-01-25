@@ -12,7 +12,7 @@
 
 ## How to run?
 
-pyton main.py
+python main.py
 
 ## Versions:
 
