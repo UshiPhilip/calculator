@@ -9,6 +9,7 @@
 | Advanced actions ( power, root, factorial ) | advanced.py   |
 | User interface                              | ui.py         |
 | Basic statistic functions                   | stats.py      |
+| Testing file                                | test_calc.py  |
 
 ## How to run?
 
