@@ -8,7 +8,6 @@
 | Basic actions ( + - * / )                   | operations.py |
 | Advanced actions ( power, root, factorial ) | advanced.py   |
 | User interface                              | ui.py         |
-| Basic statistic functions                   | stats.py      |
 
 ## How to run?
 
