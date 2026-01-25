@@ -25,5 +25,6 @@ def show_menu():
     print("4. Divide")
     print("5. Power")
     print("6. Root")
+    print("7. Factorial")
     print("0. Exit")
     return input("Chose an action: ")
