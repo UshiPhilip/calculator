@@ -9,3 +9,8 @@ def circle_area(radius):
     """
     return PI * (radius**2)
 
+def rectangle_area(width, height):
+    """
+    Return a rectangle area.
+    """
+    return width * height
