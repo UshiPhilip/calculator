@@ -3,6 +3,8 @@ Operator model:
 ===============
 Including basic calculations: Addition, Subtract, Multiply, Dividing
 """
+from GitKreken.calculator.colors import print_error
+
 
 def add(a, b):
     """Adding two numbers"""
@@ -23,5 +25,6 @@ def divide(a, b):
     Dividing two numbers
     """
     if b == 0:
-        return "Error: you can NOT dividing by zero!"
+        print_error("Error: you can NOT dividing by zero!")
+        return None
     return a / b
