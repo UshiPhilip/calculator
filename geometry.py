@@ -1,4 +1,4 @@
-from constants import PI, E, GOLDEN_RATIO
+from constants import PI
 """
 Geometry functions
 """
@@ -14,3 +14,9 @@ def rectangle_area(width, height):
     Return a rectangle area.
     """
     return width * height
+
+def triangle_area(base, height):
+    """
+    Return a triangle area.
+    """
+    return (base * height) / 2
