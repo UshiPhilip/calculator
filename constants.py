@@ -13,6 +13,6 @@ def show_constants():
     Shoes all the Mathematical constants.
     """
     print("\n=== Mathematical Constants ===")
-    print(f"π (פאי) = {PI}")
-    print(f"e (אוילר) = {E}")
-    print(f"φ (הזהב יחס) = {GOLDEN_RATIO}")
+    print(f"π (PI) = {PI}")
+    print(f"e (Euler) = {E}")
+    print(f"φ (The golden ratio) = {GOLDEN_RATIO}")
