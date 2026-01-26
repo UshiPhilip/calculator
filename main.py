@@ -4,9 +4,10 @@ from stats import average, find_max, find_min, median
 from history import add_to_history, show_history, clear_history
 from ui import get_number, show_menu
 
-print("============================")
-print(" Welcome To Our Calculator!")
-print("============================")
+print("╔════════════════════════════╗")
+print("║ Welcome To Our Calculator! ║")
+print("║        Version 4.0         ║")
+print("╚════════════════════════════╝")
 
 while True:
     choice = show_menu()
