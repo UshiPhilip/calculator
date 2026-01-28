@@ -1,3 +1,4 @@
+from GitKreken.calculator.currency import convert_currency
 from operations import add, subtract, multiply, divide
 from advanced import power, square_root, factorial
 from stats import average, find_max, find_min, median
@@ -104,12 +105,19 @@ while True:
         add_to_history(f"Base: {num1} & height: {num2}'s area =", result)
 
     elif choice == "15":
-        show_constants()
+        num1 = get_number("Enter amount: ")
+        num2 = get_number("Choose target currency (EUR / GBP / JPY):")
+        result = convert_currency(num1, num2)
+        print(f"Result: {result}")
+        add_to_history(f"{num1} converted currency to {num2} =", result)
 
     elif choice == "16":
-        show_history()
+        show_constants()
 
     elif choice == "17":
+        show_history()
+
+    elif choice == "18":
         clear_history()
 
     else:
