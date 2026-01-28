@@ -2,14 +2,17 @@
 
 ## Files in the project:
 
-| Description                                 | File name     |
-|---------------------------------------------|---------------|
-| Main file - Runs the program                | main.py       |
-| Basic actions ( + - * / )                   | operations.py |
-| Advanced actions ( power, root, factorial ) | advanced.py   |
-| User interface                              | ui.py         |
-| Basic statistic functions                   | stats.py      |
-| Testing file                                | test_calc.py  |
+| Description                                 | File name          |
+|---------------------------------------------|--------------------|
+| Main file - Runs the program                | main.py            |
+| Basic actions ( + - * / )                   | operations.py      |
+| Advanced actions ( power, root, factorial ) | advanced.py        |
+| User interface                              | ui.py              |
+| Basic statistic functions                   | stats.py           |
+| Control history                             | history.py         |
+| Colors messages                             | colors.py          |
+| Constance mathematical                      | constance.py       |
+| Geometry functions                          | geometry.py        |
 
 ## How to run?
 
