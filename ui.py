@@ -34,10 +34,14 @@ def show_menu():
     print("13. Rectangle area")
     print("14. Triangle area")
 <<<<<<< HEAD
+<<<<<<< HEAD
     print("15. Percentage")
 =======
     print("15. Currency converter")
 >>>>>>> feature/currency
+=======
+    print("15. Converting from C° to F°")
+>>>>>>> feature/temperature
     print("16. Shows constants")
     print("=== History ===")
     print("17. Show history")

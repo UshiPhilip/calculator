@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 from percentage import percentage
 =======
 from GitKreken.calculator.currency import convert_currency
 >>>>>>> feature/currency
+=======
+from GitKreken.calculator.temperature import temperature
+>>>>>>> feature/temperature
 from operations import add, subtract, multiply, divide
 from advanced import power, square_root, factorial
 from stats import average, find_max, find_min, median
@@ -110,6 +114,7 @@ while True:
 
     elif choice == "15":
 <<<<<<< HEAD
+<<<<<<< HEAD
         num1 = get_number("Enter a number: ")
         num2 = get_number("Enter the percent: ")
         result = percentage(num1, num2)
@@ -122,6 +127,13 @@ while True:
         print(f"Result: {result}")
         add_to_history(f"{num1} converted currency to {num2} =", result)
 >>>>>>> feature/currency
+=======
+        num1 = get_number("Enter degrees: ")
+        num2 = get_number("Enter target temperature unit (C/F): ")
+        result = temperature(num1, num2)
+        print(f"Result: {result}")
+        add_to_history(f"{num1} degrees converted to {num2} =", result)
+>>>>>>> feature/temperature
 
     elif choice == "16":
         show_constants()
