@@ -33,18 +33,12 @@ def show_menu():
     print("12. Circle area")
     print("13. Rectangle area")
     print("14. Triangle area")
-<<<<<<< HEAD
-<<<<<<< HEAD
     print("15. Percentage")
-=======
-    print("15. Currency converter")
->>>>>>> feature/currency
-=======
-    print("15. Converting from C° to F°")
->>>>>>> feature/temperature
-    print("16. Shows constants")
+    print("16. Currency converter")
+    print("17. Converting from C° to F°")
+    print("18. Shows constants")
     print("=== History ===")
-    print("17. Show history")
-    print("18. Clear history")
+    print("19. Show history")
+    print("20. Clear history")
     print("0. Exit")
     return input("Chose an action: ")

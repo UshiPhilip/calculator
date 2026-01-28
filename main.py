@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 from percentage import percentage
-=======
-from GitKreken.calculator.currency import convert_currency
->>>>>>> feature/currency
-=======
-from GitKreken.calculator.temperature import temperature
->>>>>>> feature/temperature
+from currency import convert_currency
+from temperature import temperature
 from operations import add, subtract, multiply, divide
 from advanced import power, square_root, factorial
 from stats import average, find_max, find_min, median
@@ -113,36 +107,38 @@ while True:
         add_to_history(f"Base: {num1} & height: {num2}'s area =", result)
 
     elif choice == "15":
-<<<<<<< HEAD
-<<<<<<< HEAD
         num1 = get_number("Enter a number: ")
         num2 = get_number("Enter the percent: ")
         result = percentage(num1, num2)
         print(f"Result: {result}")
         add_to_history(f"{num2} precent of {num1}:", result)
-=======
+
+    elif choice == "16":
         num1 = get_number("Enter amount: ")
         num2 = get_number("Choose target currency (EUR / GBP / JPY):")
         result = convert_currency(num1, num2)
         print(f"Result: {result}")
         add_to_history(f"{num1} converted currency to {num2} =", result)
->>>>>>> feature/currency
-=======
+
+    elif choice == "17":
         num1 = get_number("Enter degrees: ")
         num2 = get_number("Enter target temperature unit (C/F): ")
         result = temperature(num1, num2)
         print(f"Result: {result}")
         add_to_history(f"{num1} degrees converted to {num2} =", result)
->>>>>>> feature/temperature
-
-    elif choice == "16":
-        show_constants()
-
-    elif choice == "17":
-        show_history()
 
     elif choice == "18":
-        clear_history()
+        show_constants()
+
+    elif choice == "19":
+        show_history()
+
+    elif choice == "20":
+        sure = input("Are you sure you want to delete the history [y/n]: ")
+        if sure.lower() == "y":
+            clear_history()
+        else:
+            print("Clear history canceled.")
 
     else:
         print("Invalid selection...")
