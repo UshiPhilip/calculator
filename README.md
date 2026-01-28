@@ -54,10 +54,13 @@ Try converting 100 USD to EUR, then calculate the factorial of 5, all in one go!
 - Interactive interface - v3.0
 - Final version - v4.0
 
+<<<<<<< HEAD
 ## How to contribute 🤝
 
 ### Feel free to fork the project, add new functions, or improve the UI.
 ### Just don’t forget to leave some love ❤️
+=======
+>>>>>>> origin/main
 
 
 
