@@ -24,7 +24,7 @@ def show_history():
 
     print("\n=== History ===")
     for i, entry in enumerate(calculation_history, 1):
-        print(f"{i}, {entry}")
+        print(f"{i}. {entry}")
 
 def clear_history():
     """

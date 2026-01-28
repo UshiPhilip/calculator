@@ -1,3 +1,4 @@
+from percentage import percentage
 from operations import add, subtract, multiply, divide
 from advanced import power, square_root, factorial
 from stats import average, find_max, find_min, median
@@ -20,7 +21,7 @@ while True:
 
     if choice in ["1", "2", "3", "4", "5"]:
         num1 = get_number("Enter your first number: ")
-        num2 = get_number("Enter your second number: ")\
+        num2 = get_number("Enter your second number: ")
 
         if choice == "1":
             result = add(num1, num2)
@@ -104,12 +105,19 @@ while True:
         add_to_history(f"Base: {num1} & height: {num2}'s area =", result)
 
     elif choice == "15":
-        show_constants()
+        num1 = get_number("Enter a number: ")
+        num2 = get_number("Enter the percent: ")
+        result = percentage(num1, num2)
+        print(f"Result: {result}")
+        add_to_history(f"{num2} precent of {num1}:", result)
 
     elif choice == "16":
-        show_history()
+        show_constants()
 
     elif choice == "17":
+        show_history()
+
+    elif choice == "18":
         clear_history()
 
     else:
