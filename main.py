@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 from percentage import percentage
+=======
+from GitKreken.calculator.currency import convert_currency
+>>>>>>> feature/currency
 from operations import add, subtract, multiply, divide
 from advanced import power, square_root, factorial
 from stats import average, find_max, find_min, median
@@ -105,11 +109,19 @@ while True:
         add_to_history(f"Base: {num1} & height: {num2}'s area =", result)
 
     elif choice == "15":
+<<<<<<< HEAD
         num1 = get_number("Enter a number: ")
         num2 = get_number("Enter the percent: ")
         result = percentage(num1, num2)
         print(f"Result: {result}")
         add_to_history(f"{num2} precent of {num1}:", result)
+=======
+        num1 = get_number("Enter amount: ")
+        num2 = get_number("Choose target currency (EUR / GBP / JPY):")
+        result = convert_currency(num1, num2)
+        print(f"Result: {result}")
+        add_to_history(f"{num1} converted currency to {num2} =", result)
+>>>>>>> feature/currency
 
     elif choice == "16":
         show_constants()
